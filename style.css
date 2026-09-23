@@ -1345,3 +1345,172 @@ nav a:hover {
 .game-card:nth-child(4) .game-image img {
     filter: drop-shadow(0 0 8px rgba(64, 216, 197, 0.65));
 }
+
+/* ==========================================
+   KAIJU INTERACTIVE
+   SOCIAL MEDIA SECTION
+========================================== */
+
+.social-section {
+
+    border-top: 1px solid rgba(100, 216, 197, 0.2);
+
+}
+
+.social-description {
+
+    max-width: 650px;
+
+    margin-bottom: 40px;
+
+    color: #b7cbd0;
+
+    line-height: 1.8;
+
+}
+
+
+/* SOCIAL GRID */
+
+.social-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+}
+
+
+/* SOCIAL CARDS */
+
+.social-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 26px;
+
+    background: #18272a;
+
+    border: 1px solid #30484b;
+
+    border-radius: 8px;
+
+    color: #64d8c5;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+/* PLATFORM NAMES */
+
+.social-name {
+
+    font-family: 'Press Start 2P', monospace;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ARROWS */
+
+.social-arrow {
+
+    font-size: 20px;
+
+    transition: transform 0.2s ease;
+
+}
+
+
+/* HOVER EFFECT */
+
+.social-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #64d8c5;
+
+    background: #203438;
+
+}
+
+
+/* ARROW ANIMATION */
+
+.social-card:hover .social-arrow {
+
+    transform: translate(3px, -3px);
+
+}
+
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 900px) {
+
+    .social-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .social-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .social-card {
+
+        padding: 22px;
+
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+.social-card:focus-visible {
+
+    outline: 2px solid #64d8c5;
+
+    outline-offset: 4px;
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .social-card,
+    .social-arrow {
+
+        transition: none;
+
+    }
+
+}
