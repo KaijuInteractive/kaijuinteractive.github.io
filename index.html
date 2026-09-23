@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#0d1214">
+
+    <meta name="description"
+          content="Kaiju Interactive is an independent game development studio creating games, software, and strange new worlds.">
+
+    <title>Kaiju Interactive | Independent Game Studio</title>
+
+    <!-- FAVICON -->
+
+    <link rel="icon"
+          type="image/png"
+          href="Assets/Briefs.png">
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Press+Start+2P&display=swap"
+          rel="stylesheet">
+
+    <!-- STYLESHEET -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         ANIMATED STARFIELD
+    ====================================== -->
+
+    <canvas id="starfield"
+            aria-hidden="true"></canvas>
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a href="#home"
+               class="brand">
+
+                <img src="Assets/Logo.png"
+                     alt="Kaiju Interactive logo">
+
+                <span>KAIJU INTERACTIVE</span>
+
+            </a>
+
+
+            <button id="menu-toggle"
+                    class="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+
+                ☰
+
+            </button>
+
+
+            <nav id="navigation">
+
+                <a href="#home">Home</a>
+
+                <a href="#games">Games</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section id="home"
+                 class="hero">
+
+            <div class="hero-container">
+
+
+                <div class="hero-image">
+
+                    <img src="Assets/Logo_Big.png"
+                         alt="Kaiju Interactive">
+
+                </div>
+
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+
+                        INDEPENDENT GAME DEVELOPMENT STUDIO
+
+                    </p>
+
+
+                    <h1>
+
+                        BIG IDEAS.
+
+                        <span>SMALL STUDIO.</span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Creating games, building software,
+                        and exploring strange new worlds.
+
+                        Welcome to Kaiju Interactive.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#games"
+                           class="button button-primary">
+
+                            EXPLORE OUR GAMES
+
+                        </a>
+
+
+                        <a href="#about"
+                           class="button button-outline">
+
+                            MEET THE DEVELOPER
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#games"
+               class="scroll-indicator">
+
+                ▼ SCROLL TO EXPLORE
+
+            </a>
+
+        </section>
+
+
+        <!-- =====================================
+             GAMES
+        ====================================== -->
+
+        <section id="games"
+                 class="section">
+
+            <div class="container">
+
+
+                <p class="section-label">
+
+                    PRESS START
+
+                </p>
+
+
+                <h2>OUR GAMES</h2>
+
+
+                <p class="section-description">
+
+                    From arcade experiments to
+                    mythology-inspired adventures,
+                    there's always something strange
+                    happening at Kaiju Interactive.
+
+                </p>
+
+
+                <div class="game-grid">
+
+
+                    <!-- UNDIES CHESS -->
+
+                    <article class="game-card">
+
+                        <div class="game-image">
+
+                            <img src="Assets/Pawn.png"
+                                 alt="Pixel art chess pawn">
+
+                        </div>
+
+
+                        <div class="game-content">
+
+                            <span class="game-genre">
+
+                                STRATEGY
+
+                            </span>
+
+
+                            <h3>Undies Chess</h3>
+
+
+                            <p>
+
+                                Classic chess with an
+                                unconventional wardrobe.
+
+                                Challenge a friend or
+                                take on the CPU in this
+                                underwear-themed strategy game.
+
+                            </p>
+
+
+                            <a href="https://kaiju-plays.itch.io/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                PLAY ON ITCH.IO →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- UNDERWEAR CATCHER -->
+
+                    <article class="game-card">
+
+                        <div class="game-image">
+
+                            <img src="Assets/Briefs.png"
+                                 alt="Pixel art underwear">
+
+                        </div>
+
+
+                        <div class="game-content">
+
+                            <span class="game-genre">
+
+                                ARCADE
+
+                            </span>
+
+
+                            <h3>Underwear Catcher</h3>
+
+
+                            <p>
+
+                                Catch falling underwear,
+                                chase your high score,
+                                and survive as the
+                                difficulty increases.
+
+                                Three misses and it's game over!
+
+                            </p>
+
+
+                            <a href="https://kaiju-plays.itch.io/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                PLAY ON ITCH.IO →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FLAPPY UNDIES -->
+
+                    <article class="game-card">
+
+                        <div class="game-image">
+
+                            <img src="Assets/Kaiju Undies.png"
+                                 alt="Pixel art Kaiju underwear">
+
+                        </div>
+
+
+                        <div class="game-content">
+
+                            <span class="game-genre">
+
+                                PICO-8
+
+                            </span>
+
+
+                            <h3>Flappy Undies</h3>
+
+
+                            <p>
+
+                                A tiny arcade adventure
+                                starring a very determined
+                                pair of underwear.
+
+                                Dodge obstacles and
+                                see how far you can fly!
+
+                            </p>
+
+
+                            <a href="https://kaiju-plays.itch.io/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                PLAY ON ITCH.IO →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- WHISPERS OF THE DUAT -->
+
+                    <article class="game-card">
+
+                        <div class="game-image">
+
+                            <img src="Assets/EoH.png"
+                                 alt="Pixel art Eye of Horus">
+
+                        </div>
+
+
+                        <div class="game-content">
+
+                            <span class="game-genre">
+
+                                VISUAL NOVEL
+
+                            </span>
+
+
+                            <h3>Whispers of the Duat</h3>
+
+
+                            <p>
+
+                                Enter ancient Egypt in
+                                a mythology-inspired
+                                romantic adventure.
+
+                                Meet the gods, make choices,
+                                and discover where your
+                                heart will lead.
+
+                            </p>
+
+
+                            <a href="https://kaiju-plays.itch.io/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                PLAY THE DEMO →
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PROJECTS
+        ====================================== -->
+
+        <section id="projects"
+                 class="section projects-section">
+
+            <div class="container">
+
+
+                <p class="section-label">
+
+                    BEHIND THE SCENES
+
+                </p>
+
+
+                <h2>BEYOND THE GAMES</h2>
+
+
+                <p class="section-description">
+
+                    Game development is only part
+                    of the adventure.
+
+                    Here are some of the other
+                    things being built at
+                    Kaiju Interactive.
+
+                </p>
+
+
+                <div class="project-grid">
+
+
+                    <article class="project-card">
+
+                        <span class="project-icon">
+
+                            ⚙
+
+                        </span>
+
+
+                        <h3>Underware Engine</h3>
+
+
+                        <p>
+
+                            A custom C++ game engine
+                            built with raylib.
+
+                            Learning how games work
+                            from the inside out.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <span class="project-icon">
+
+                            &lt;/&gt;
+
+                        </span>
+
+
+                        <h3>Jockstrap</h3>
+
+
+                        <p>
+
+                            A custom programming
+                            language and compiler.
+
+                            Because apparently
+                            making games wasn't
+                            complicated enough.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <span class="project-icon">
+
+                            ✦
+
+                        </span>
+
+
+                        <h3>KSETI</h3>
+
+
+                        <p>
+
+                            A radio signal analysis
+                            project inspired by
+                            astronomy, SETI,
+                            and the search for
+                            signals among the stars.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <span class="project-icon">
+
+                            ▣
+
+                        </span>
+
+
+                        <h3>Undies OS</h3>
+
+
+                        <p>
+
+                            A custom desktop
+                            environment bringing
+                            together games,
+                            software, and
+                            experimental ideas.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="section-action">
+
+                    <a href="https://github.com/KaijuInteractive"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button button-outline">
+
+                        EXPLORE OUR GITHUB
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ABOUT
+        ====================================== -->
+
+        <section id="about"
+                 class="section">
+
+            <div class="container">
+
+
+                <p class="section-label">
+
+                    PLAYER ONE
+
+                </p>
+
+
+                <h2>MEET THE DEVELOPER</h2>
+
+
+                <div class="about-container">
+
+
+                    <div class="about-image">
+
+                        <img src="Assets/Kaiju_pic.png"
+                             alt="Kaiju Interactive developer avatar">
+
+                    </div>
+
+
+                    <div class="about-content">
+
+
+                        <h3>HEY, I'M KAIJU.</h3>
+
+
+                        <p>
+
+                            I'm an independent game
+                            developer with a love
+                            for retro games,
+                            pixel art, mythology,
+                            astronomy, and
+                            creating strange
+                            little worlds.
+
+                        </p>
+
+
+                        <p>
+
+                            Kaiju Interactive is
+                            my home for games,
+                            software experiments,
+                            and whatever other
+                            ideas happen to
+                            escape my brain.
+
+                        </p>
+
+
+                        <p>
+
+                            From C++ and raylib
+                            to Python, Rust,
+                            and PICO-8,
+                            I'm always learning
+                            something new.
+
+                        </p>
+
+
+                        <p class="about-highlight">
+
+                            Big ideas.
+                            Small studio.
+                            Endless possibilities.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CONTACT
+        ====================================== -->
+
+        <section id="contact"
+                 class="section contact-section">
+
+            <div class="container">
+
+
+                <p class="section-label">
+
+                    OPEN COMMUNICATION CHANNEL
+
+                </p>
+
+
+                <h2>LET'S CONNECT</h2>
+
+
+                <p class="section-description">
+
+                    Interested in the games,
+                    the projects,
+                    or just want to say hello?
+
+                    Find Kaiju Interactive
+                    around the internet.
+
+                </p>
+
+
+                <div class="contact-links">
+
+
+                    <a href="https://kaiju-plays.itch.io/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <span>ITCH.IO</span>
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <a href="https://github.com/KaijuInteractive"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <span>GITHUB</span>
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <a href="mailto:kaiju.interactive@gmail.com"
+                       class="contact-card">
+
+                        <span>EMAIL</span>
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+
+            <p>
+
+                © <span id="year">2026</span>
+                KAIJU INTERACTIVE
+
+            </p>
+
+
+            <p>
+
+                MADE WITH ♥ AND QUESTIONABLE IDEAS
+
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
